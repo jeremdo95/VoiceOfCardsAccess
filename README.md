@@ -2,26 +2,22 @@
 
 A mod that makes Voice of Cards: The Isle Dragon Roars playable with a screen reader. Menus, story, cards, battles, shops and the card game are spoken, and a scanner tells you what is on the board and how to walk there.
 
-This is version 0.2.0, a test version. Please expect gaps, and report them.
+This is version 1.0.0. The whole game was played to the end with it. If something stays silent or is read wrongly, please report it.
 
 ## Download
 
-Get the file VoiceOfCardsAccess-0.2.0.zip from the releases page: https://github.com/jeremdo95/VoiceOfCardsAccess/releases/latest
-
-## What's new in 0.2.0
-
-- In battle, each enemy is named as its card appears on the table, the first battle of the prologue included.
+Get the file VoiceOfCardsAccess-1.0.0.zip from the releases page: https://github.com/jeremdo95/VoiceOfCardsAccess/releases/latest
 
 ## What you need
 
 - Voice of Cards: The Isle Dragon Roars on Steam, for Windows. The mod was tested on game version 1.0.3, Steam build 20266240.
 - A screen reader. The mod was tested with NVDA only. It uses the Prism library, which also knows other screen readers, but they are untested.
-- A keyboard. Gamepads are untested.
+- A keyboard, or an Xbox gamepad. Other gamepads are untested.
 - An internet connection for the first launch.
 
 ## Known limits
 
-- The story was tested up to chapter 5. Later chapters are unchecked, so some text may stay silent.
+- The story was played once, with one set of choices. Other choices and the optional places may hold text that stays silent.
 - The mod speaks French when the game's text language is French, and English in all other languages. Text coming from the game itself stays in the game's language.
 - English was tested less than French. Some English words for terrain cards are the mod's own guesses.
 - A game update can break the mod.
@@ -32,7 +28,7 @@ Get the file VoiceOfCardsAccess-0.2.0.zip from the releases page: https://github
 
    C:\Program Files (x86)\Steam\steamapps\common\VoiceofCardsTheIsleDragonRoars
 
-2. Extract the zip anywhere, for example on your desktop. Windows puts the files in a new folder named VoiceOfCardsAccess-0.2.0. Open that folder, select everything with Ctrl + A, and copy it with Ctrl + C.
+2. Extract the zip anywhere, for example on your desktop. Windows puts the files in a new folder named VoiceOfCardsAccess-1.0.0. Open that folder, select everything with Ctrl + A, and copy it with Ctrl + C.
 3. Open the game folder and paste with Ctrl + V. Windows may ask for administrator permission. The file version.dll must now be directly in the game folder, beside VoiceofCardsTheIsleDragonRoars.exe, not in a subfolder. This is the most common mistake: with the files in a subfolder, the game runs without the mod.
 4. Start your screen reader, then start the game from Steam as usual.
 5. The first launch is silent for a minute or more, sometimes several minutes on a slow computer. MelonLoader, the tool that loads the mod, downloads what it needs and prepares the game. Please wait and do not close anything. Later launches are quick.
@@ -57,7 +53,6 @@ Get the file VoiceOfCardsAccess-0.2.0.zip from the releases page: https://github
 - Shift + Page Down: next scanner category.
 - Shift + Page Up: previous scanner category.
 - Shift + Home: say the objective card, if one is marked.
-- F7: overview of everything notable on the map, in one line.
 
 The scanner lists items nearest first. The categories are All, Exits, People, Shops, Chests and Others. Each item comes with the walk to reach it, for example "2 left, 1 up". "No walking path" means that no walk exists yet. The mod does not walk for you: you follow the steps with the movement keys.
 
@@ -84,8 +79,23 @@ A hidden treasure enters the scanner once you own the card that hints at it.
 
 ### Anywhere
 
-- F8: the party's gold.
+- G: the party's gold. In battle G says the gems and in the card game the pot instead.
+- F1: help, the mod's keys for where you are (board, battle, card game, menu). With a gamepad plugged in, it gives the gamepad buttons instead.
+- F2: repeat the mod's last sentence.
 - F9: write what is on screen to a file, for a bug report.
+
+### With an Xbox gamepad
+
+Tested with an Xbox gamepad only. A PlayStation gamepad has not been tested: it may work with the buttons in the same places (R2 for RT, cross for A, circle for B, square for X, triangle for Y, L1 and R1 for LB and RB), but this is not proven.
+
+Hold the right trigger (RT), then press a button. While RT is held, the game ignores the gamepad, so nothing moves.
+
+- On the board: D-pad down and up, next and previous scanner item. D-pad right and left, next and previous category. A, repeat the item. B, your current card and its neighbours. Y, the objective card. RB, the party's gold.
+- In battle: RB, the gems. LB, the hit points. X, whose turn it is. Y, all units.
+- In the card game: RB, the pot. LB, your hand. X, the scores. Y, the sets.
+- In the game menu: D-pad for the character sheets, as Ctrl + arrows.
+
+In this game, B confirms and A goes back. When you choose a card to jump to, the right stick moves the cursor and the mod says each card.
 
 ## If something goes wrong
 
@@ -100,7 +110,7 @@ Open an issue on https://github.com/jeremdo95/VoiceOfCardsAccess/issues
 
 Please say what you did, what you heard, and what you expected. If you can, press F9 at the moment of the problem. Then attach these files, from the folder UserData\VoiceOfCardsAccess in the game folder:
 
-- VoiceOfCardsAccess.log, the mod's log.
+- VoiceOfCardsAccess.log, the mod's log, and VoiceOfCardsAccess-previous.log if it is there: when the log grows too big, its older part moves to that file.
 - The newest dump file, such as dump-1.txt, if you pressed F9.
 
 The log holds the game's folder path, which can show your Windows user name, and the sentences spoken during your game, such as your character's name.
