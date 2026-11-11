@@ -2,11 +2,11 @@
 
 A mod that makes Voice of Cards: The Isle Dragon Roars playable with a screen reader. Menus, story, cards, battles, shops and the card game are spoken, and a scanner tells you what is on the board and how to walk there.
 
-This is version 1.1.1. The whole game was played to the end with it. If something stays silent or is read wrongly, please report it.
+This is version 1.2.0. The whole game was played to the end with it. If something stays silent or is read wrongly, please report it.
 
 ## Download
 
-Get the file VoiceOfCardsAccess-1.1.1.zip from the releases page: https://github.com/jeremdo95/VoiceOfCardsAccess/releases/latest
+Get the file VoiceOfCardsAccess-1.2.0.zip from the releases page: https://github.com/jeremdo95/VoiceOfCardsAccess/releases/latest
 
 ## What you need
 
@@ -20,7 +20,7 @@ Get the file VoiceOfCardsAccess-1.1.1.zip from the releases page: https://github
 - The story was played once, with one set of choices. Other choices and the optional places may hold text that stays silent.
 - The mod speaks French when the game's text language is French, and English in all other languages. Text coming from the game itself stays in the game's language.
 - English was tested less than French. Some English words for terrain cards are the mod's own guesses.
-- The game master's spoken lines are read only while the game's subtitles are on (Options, Other, Subtitles). With subtitles off, you hear only the recorded voice, in English or Japanese. A new game shows them until it asks whether you want them.
+- The game master's spoken lines are read only while the game's subtitles are on (Options, Other, Subtitles). With subtitles off, you hear only the recorded voice, in English or Japanese: the mod stays silent on the story cards he reads aloud, and still reads choices, menus and cards without a voice, about a second late. A new game shows subtitles until it asks whether you want them.
 - A game update can break the mod.
 
 ## Install
@@ -29,7 +29,7 @@ Get the file VoiceOfCardsAccess-1.1.1.zip from the releases page: https://github
 
    C:\Program Files (x86)\Steam\steamapps\common\VoiceofCardsTheIsleDragonRoars
 
-2. Extract the zip anywhere, for example on your desktop. Windows puts the files in a new folder named VoiceOfCardsAccess-1.1.1. Open that folder, select everything with Ctrl + A, and copy it with Ctrl + C.
+2. Extract the zip anywhere, for example on your desktop. Windows puts the files in a new folder named VoiceOfCardsAccess-1.2.0. Open that folder, select everything with Ctrl + A, and copy it with Ctrl + C.
 3. Open the game folder and paste with Ctrl + V. Windows may ask for administrator permission. The file version.dll must now be directly in the game folder, beside VoiceofCardsTheIsleDragonRoars.exe, not in a subfolder. This is the most common mistake: with the files in a subfolder, the game runs without the mod.
 4. Start your screen reader, then start the game from Steam as usual.
 5. The first launch is silent for a minute or more, sometimes several minutes on a slow computer. MelonLoader, the tool that loads the mod, downloads what it needs and prepares the game. Please wait and do not close anything. Later launches are quick.
@@ -48,6 +48,7 @@ Get the file VoiceOfCardsAccess-1.1.1.zip from the releases page: https://github
 ### On the board
 
 - End: say your current card and its neighbours again.
+- F3: turn off, or back on, the announcement of your card and its neighbours after each step. When it is off, a step says nothing, but events, blocked moves and the steps left of a timed escape are still said, and End still works. The mod remembers this choice for the next launch.
 - Page Down: next item of the scanner.
 - Page Up: previous item of the scanner.
 - Home: repeat the current scanner item.
@@ -91,7 +92,7 @@ Tested with an Xbox gamepad only. A PlayStation gamepad has not been tested: it 
 
 Hold the right trigger (RT), then press a button. While RT is held, the game ignores the gamepad, so nothing moves.
 
-- On the board: D-pad down and up, next and previous scanner item. D-pad right and left, next and previous category. A, repeat the item. B, your current card and its neighbours. Y, the objective card. RB, the party's gold.
+- On the board: D-pad down and up, next and previous scanner item. D-pad right and left, next and previous category. A, repeat the item. B, your current card and its neighbours. X, turn their announcement after each step off or on, like F3. Y, the objective card. RB, the party's gold.
 - In battle: RB, the gems. LB, the hit points. X, whose turn it is. Y, all units.
 - In the card game: RB, the pot. LB, your hand. X, the scores. Y, the sets.
 - In the game menu: D-pad for the character sheets, as Ctrl + arrows.
