@@ -2,11 +2,11 @@
 
 A mod that makes Voice of Cards: The Isle Dragon Roars playable with a screen reader. Menus, story, cards, battles, shops and the card game are spoken, and a scanner tells you what is on the board and how to walk there.
 
-This is version 1.2.0. The whole game was played to the end with it. If something stays silent or is read wrongly, please report it.
+This is version 1.2.1. The whole game was played to the end with it. If something stays silent or is read wrongly, please report it.
 
 ## Download
 
-Get the file VoiceOfCardsAccess-1.2.0.zip from the releases page: https://github.com/jeremdo95/VoiceOfCardsAccess/releases/latest
+Get the file VoiceOfCardsAccess-1.2.1.zip from the releases page: https://github.com/jeremdo95/VoiceOfCardsAccess/releases/latest
 
 ## What you need
 
@@ -29,7 +29,7 @@ Get the file VoiceOfCardsAccess-1.2.0.zip from the releases page: https://github
 
    C:\Program Files (x86)\Steam\steamapps\common\VoiceofCardsTheIsleDragonRoars
 
-2. Extract the zip anywhere, for example on your desktop. Windows puts the files in a new folder named VoiceOfCardsAccess-1.2.0. Open that folder, select everything with Ctrl + A, and copy it with Ctrl + C.
+2. Extract the zip anywhere, for example on your desktop. Windows puts the files in a new folder named VoiceOfCardsAccess-1.2.1. Open that folder, select everything with Ctrl + A, and copy it with Ctrl + C.
 3. Open the game folder and paste with Ctrl + V. Windows may ask for administrator permission. The file version.dll must now be directly in the game folder, beside VoiceofCardsTheIsleDragonRoars.exe, not in a subfolder. This is the most common mistake: with the files in a subfolder, the game runs without the mod.
 4. Start your screen reader, then start the game from Steam as usual.
 5. The first launch is silent for a minute or more, sometimes several minutes on a slow computer. MelonLoader, the tool that loads the mod, downloads what it needs and prepares the game. Please wait and do not close anything. Later launches are quick.
